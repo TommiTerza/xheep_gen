@@ -69,9 +69,6 @@ class Pad:
         self.iocell: Cell = None
         self.bondpad: Cell = None
 
-    # If they are all digital, then check if they are all input -> set input, etc
-    # If mixed analog & digital, raise an error
-
     def build(self):
         """
         Finalizes the pad by sorting its pins by priority and inheriting attributes from the main
